@@ -1,0 +1,19 @@
+<div class="h-screen w-full bg-slate-900 flex flex-col justify-center items-center p-4">
+    <form class="flex flex-col gap-4 bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <input type="text" name="url" placeholder="Enter URL"
+            class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+        <button type="submit"
+            class="bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-600 transition-all">
+            Generate QR Code
+        </button>
+
+        <img id="qrcode" alt="QR Code will appear here" class="mt-8 w-48 h-48 object-contain hidden mx-auto">
+        <a id="download-link"
+            class="bg-blue-500 text-white font-semibold py-2 rounded-lg text-center mt-4 w-full hidden hover:bg-blue-600 transition-all"
+            download="qrcode.png">
+            Download QR Code
+        </a>
+    </form>
+</div>
+
+<script src="/src/js/home/script.js"></script>
